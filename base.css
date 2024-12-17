@@ -104,6 +104,7 @@ hr {
 .project-wrapper{
     display: flex;
     flex-direction: column;
+    padding-bottom: 1em;
     gap: 1em;
 }
 .project-wrapper h2{
@@ -162,6 +163,23 @@ hr {
 }
 .publication-wrapper .publication b{
     font-weight: 400;
+}
+.teaching-wrapper h2{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.75em;
+    margin: 0;
+}
+.teaching-wrapper .teaching h3{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: -0.75em;
+}
+.teaching-wrapper .teaching p{
+    font-size: 1em;
 }
 .footer{
     font-family: "Roboto", sans-serif;
