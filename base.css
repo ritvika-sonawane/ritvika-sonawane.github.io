@@ -54,8 +54,8 @@ a:hover{
 }
 .about-wrapper img{
     width: 15em;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
-    border-radius: .25rem !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: .25rem;
     vertical-align: middle;
     border-style: none;
 }
@@ -89,7 +89,6 @@ a:hover{
     height: 1.55em;
 }
 .contact-wrapper .github{
-    /* margin: auto 0 auto 0.1em; */
     margin-right: 0.45em;
 }
 hr {
@@ -102,15 +101,76 @@ hr {
     margin: 20px 0px 20px 0px;
     border: 0;
 }
+.project-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.project-wrapper h2{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.75em;
+    margin: 0;
+}
+.project{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: top;
+}
+.project h3{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    margin: 0;
+}
+.project p{
+    text-align: justify;
+}
+.project img{
+    width: 13em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: .25rem;
+    vertical-align: middle;
+    border-style: none;
+}
+.project .project-description{
+    display: flex;
+    flex-direction: column;
+}
+.publication-wrapper{
+    /* background-color: aquamarine; */
+}
+.publication-wrapper h2{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.75em;
+    margin: 0;
+}
+.publication-wrapper .publication h3{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: -0.75em;
+}
+.publication-wrapper .publication p{
+    font-size: 1em;
+}
+.publication-wrapper .publication b{
+    font-weight: 400;
+}
 .footer{
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 0.8em;
     text-align: center;
-    background-color: var(--dark-grey);
-    color: white;
     width: 105%;
-    padding: 0.25em 0;
+    padding-bottom: 0.25em;
     margin-left: -1em;
+    margin-bottom: -1em;
 }
