@@ -120,6 +120,13 @@ hr {
     gap: 1em;
     align-items: top;
 }
+.project::before{
+    content: "◆";
+    color: var(--link-blue);
+    font-size: 0.75em;
+    margin-top: 0.35em;
+    flex-shrink: 0;
+}
 .project h3{
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -141,7 +148,69 @@ hr {
     display: flex;
     flex-direction: column;
 }
-.publication-wrapper{
+.experience-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    gap: 1.25em;
+}
+.experience-wrapper h2{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.75em;
+    margin: 0 0 0.5em 0;
+}
+.experience{
+    display: flex;
+    flex-direction: row;
+    gap: 1.25em;
+    align-items: flex-start;
+}
+.experience img{
+    width: 7.5em;
+    height: 7.5em;
+    object-fit: contain;
+    object-position: top center;
+    flex-shrink: 0;
+    border-radius: .25rem;
+}
+.experience-description{
+    display: flex;
+    flex-direction: column;
+}
+.experience-description h3{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1em;
+    margin: 0 0 0.1em 0;
+}
+.experience-description .role-date{
+    font-size: 0.95em;
+    color: var(--dark-grey);
+    margin: 0 0 0.3em 0;
+}
+.experience-description p:not(.role-date){
+    margin: 0;
+    text-align: justify;
+}
+.experience-description ul{
+    margin: 0.25em 0 0 0;
+    padding-left: 1.2em;
+}
+.experience-description ul li{
+    text-align: justify;
+    margin-bottom: 0.25em;
+}
+.experience-description .sub-role{
+    margin-top: 0.6em;
+    padding-top: 0.6em;
+    border-top: 1px solid rgba(0,0,0,0.08);
+}
+.experience img.logo-invert{
+    filter: invert(1);
+}.publication-wrapper{
     /* background-color: aquamarine; */
 }
 .publication-wrapper h2{
